@@ -148,7 +148,12 @@ Open `frontend/login.html` in your browser, register an account, and start using
 
 ## Screenshots
 
-> *(Add screenshots of the login page, prediction form, result panel with SHAP bars, and dashboard here)*
+## Screenshots
+
+![Login](screenshots/loginpage.png)
+![Prediction](screenshots/predictionpage.png)
+![Batch Upload](screenshots/batchupload.png)
+![Dashboard](screenshots/dashboardpage.png)
 
 ---
 
