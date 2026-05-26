@@ -214,8 +214,7 @@
     e.preventDefault();
     hideMessages();
     try {
-      const res = await fetch('https://failsafe-production-9c45.up.railway.app
-/login', {
+      const res = await fetch('https://failsafe-production-9c45.up.railway.app/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -237,8 +236,7 @@
     e.preventDefault();
     hideMessages();
     try {
-      const res = await fetch('https://failsafe-production-9c45.up.railway.app
-/register', {
+      const res = await fetch('https://failsafe-production-9c45.up.railway.app/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

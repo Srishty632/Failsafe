@@ -1064,8 +1064,7 @@
     };
 
     try {
-      const res = await fetch("https://failsafe-production-9c45.up.railway.app
-/predict", {
+      const res = await fetch("https://failsafe-production-9c45.up.railway.app/predict", {
         method: "POST",
         headers: authHeaders(),
         body: JSON.stringify(payload)
@@ -1189,8 +1188,7 @@
   }
 
   function downloadTemplate() {
-    window.open('https://failsafe-production-9c45.up.railway.app
-/template-csv', '_blank');
+    window.open('https://failsafe-production-9c45.up.railway.app/template-csv', '_blank');
   }
 
   async function uploadCSV() {
@@ -1203,8 +1201,7 @@
     formData.append('file', selectedFile);
 
     try {
-      const res = await fetch('https://failsafe-production-9c45.up.railway.app
-/predict-csv', {
+      const res = await fetch('https://failsafe-production-9c45.up.railway.app/predict-csv', {
         method: 'POST',
         headers: { 'Authorization': 'Bearer ' + token },
         body: formData
@@ -1251,8 +1248,7 @@
     el.innerHTML = `<div class="empty-dash">Loading...</div>`;
 
     try {
-      const res = await fetch("https://failsafe-production-9c45.up.railway.app
-/dashboard", { headers: authHeaders() });
+      const res = await fetch("https://failsafe-production-9c45.up.railway.app/dashboard", { headers: authHeaders() });
       if (res.status === 401) { logout(); return; }
       const records = await res.json();
 
